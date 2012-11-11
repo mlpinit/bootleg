@@ -1,10 +1,6 @@
 require_relative 'movie'
 
 module Theater
-  def details
-    self.css('h3.title').css('a')
-  end
-
   def name
     details.text.strip
   end
@@ -22,5 +18,10 @@ module Theater
       values << movie_info
     end
     values
+  end
+
+  private
+  def details
+    self.css('h3.title').css('a')
   end
 end

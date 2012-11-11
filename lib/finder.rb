@@ -2,7 +2,7 @@ require_relative 'modules/zipcode'
 require_relative 'modules/href'
 
 class Finder
-  def initialize(zipcode = '20906')
+  def initialize(zipcode)
     zipcode.extend Zipcode
     @href = zipcode.search
   end

@@ -1,5 +1,8 @@
 require "bootleg/version"
+require "presenter"
 
 module Bootleg
-  # Your code goes here...
+  def self.presenter(zipcode)
+    Presenter.new(zipcode)
+  end
 end

@@ -19,5 +19,6 @@ Gem::Specification.new do |gem|
   
   gem.add_dependency "nokogiri"
   gem.add_dependency "mechanize"
+  gem.add_dependency "activerecord"
   gem.add_development_dependency "rspec"
 end

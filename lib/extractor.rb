@@ -17,6 +17,7 @@ class Extractor
   def extract_movies
     theaters.each do |theater|
       theater.extend Theater
+      BootlegTheater.create!(name: theater.name, href: theater.link)
       theater_info = { name: theater.name, href: theater.link, movies: theater.movies}
       @page_theaters << theater_info
     end

@@ -1,8 +1,4 @@
 module Movie
-  def details
-    self.css('div.movietitle')
-  end
-
   def name
     details.css('a').text.strip
   end
@@ -18,5 +14,11 @@ module Movie
       values << time.text
     end
     values
+  end
+
+  private
+
+  def details
+    self.css('div.movietitle')
   end
 end

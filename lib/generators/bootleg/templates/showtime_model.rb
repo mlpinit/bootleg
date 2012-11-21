@@ -3,4 +3,8 @@ class BootlegShowtime < ActiveRecord::Base
 
   belongs_to :bootleg_movie
   belongs_to :bootleg_theater
+
+  def theater
+    bootleg_theater
+  end
 end

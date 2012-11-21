@@ -28,7 +28,7 @@ Load content for a certain zipcode:
 
 Example:
 
-Bootleg.load('21102')
+    $ Bootleg.load('21102')
 
 This will load all the movies for a 25 mile radius(including their showtimes
 and the theaters where they play).

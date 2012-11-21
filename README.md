@@ -64,6 +64,6 @@ stored inside.
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-If there is other content that you would like to pull it is relatively easy
-to build a new feature to extract it. If you would like to contribute
-and need help feel free to shoot me an email at marius@mlpinit.com .
+It is relatively easy to pull other information from moviefone.com. If you 
+need an extra feature and you would like to contribute feel free to shoot
+me an email at marius@mlpinit.com beforehand.

@@ -7,4 +7,8 @@ class BootlegShowtime < ActiveRecord::Base
   def theater
     bootleg_theater
   end
+
+  def movie
+    bootleg_movie
+  end
 end

@@ -35,19 +35,19 @@ and the theaters where they play).
 
 Examples:
 
-movie = BootlegMovie.where(name: 'Example').first
+    $ movie = BootlegMovie.where(name: 'Example').first
 
 Get all the theaters where the movie is played:
 
-theaters = movie.theaters
+    $ theaters = movie.theaters
 
 Get all the showtimes:
 
-showtimes = movie.showtimes
+    $ showtimes = movie.showtimes
 
 Get the theater of the showtimes:
 
-theater = showtimes.first.theater
+    $ theater = showtimes.first.theater
 
 
 The content is stored in 3 Active Record models BootlegMovie,

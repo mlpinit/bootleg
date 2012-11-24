@@ -49,12 +49,14 @@ Get the theater of the showtimes:
 
     $ theater = showtimes.first.theater
 
+## Other Details
 
 The content is stored in 3 Active Record models BootlegMovie,
 BootlegTheater and BootlegShowtime. After you load a zipcode just start
 a rails console and take a look at the models to see what information is
 stored inside.
 
+The zipcode is stored under BootlegShowtime.:w
 
 ## Contributing
 

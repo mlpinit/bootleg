@@ -8,10 +8,11 @@ class Extractor
 
   attr_reader :page_theaters
 
-  def initialize(page)
+  def initialize(page, zipcode)
     @page = (Nokogiri::HTML(open(page)))
     @page_theaters = []
     extract_movies
+    @zipcode ||= zipcode
   end
   
   def extract_movies

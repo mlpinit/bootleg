@@ -1,5 +1,5 @@
 class BootlegShowtime < ActiveRecord::Base
-  attr_accessible :bootleg_movie_id, :bootleg_theater_id, :showtimes
+  attr_accessible :bootleg_movie_id, :bootleg_theater_id, :zipcode, :showtimes
 
   belongs_to :bootleg_movie
   belongs_to :bootleg_theater

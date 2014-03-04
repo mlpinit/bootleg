@@ -1,3 +1,0 @@
-== Bootleg - moviefone scraper
-
-This is a gem in development. It's purpose is to scrape theaters, movies, showtimes and other details from moviefone.com .

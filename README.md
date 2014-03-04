@@ -5,6 +5,12 @@ Bootleg represents my playground for scraping movies from
 
 ## If you want you can play with it as well
 
+To gain access to the gem simply:
+
+```
+require 'bootleg'
+```
+
 Currently Bootleg supports search for movies and theaters within a certain
 zipcode.
 

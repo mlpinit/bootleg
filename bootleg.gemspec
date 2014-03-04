@@ -19,5 +19,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'mechanize',         '~> 2.7.3'
 
-  gem.add_development_dependency 'rspec', '~> 2.14.1'
+  gem.add_development_dependency 'rspec', '3.0.0.beta2'
 end

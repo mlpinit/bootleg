@@ -1,8 +1,6 @@
+require "mechanize"
 require "bootleg/version"
-require "presenter"
-
-module Bootleg
-  def self.load(zipcode)
-    Presenter.new(zipcode)
-  end
-end
+require "bootleg/agent"
+require "bootleg/movie"
+require "bootleg/theater"
+require "bootleg/page"

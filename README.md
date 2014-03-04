@@ -8,7 +8,6 @@ Bootleg represents my playground for scraping movies from
 Currently Bootleg supports search for movies and theaters within a certain
 zipcode.
 
-
 ```
 agent = Bootleg::Agent.new(zipcode: 20851)
 ```
@@ -31,12 +30,26 @@ through the search results until ``page.next`` returns _Last Page_.
 page = page.next
 ```
 
-Within theaters you also have access to movies. A movie has attributes for tirle
+Within theaters you also have access to movies. A movie has attributes for title
 link and showtimes.
+
+```
+theaters = page.theaters
+```
+
+This gives you a list of theaters on the current page.
 
 For example if you would like access to all the movies that run in a certain
 theater you could do the following.
 
 ```
-theater.movies.map { |movie| movie.title }
+theaters.first.movies
 ```
+If you need to scrape additional information from either theaters or movies it is
+fairly easy to extend either the theater class or the movies class.
+
+## TODO
+
+Some of the main improvements this gem could use is better error support for
+different edge cases. The gem could also benefit from more tests to ilustrate
+some of the patterns identified while scrapping movies and theaters.

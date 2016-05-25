@@ -1,3 +1,5 @@
+No longer maintained - Moviefone changed their format
+
 # Bootleg
 
 Bootleg represents my playground for scraping movies from
